@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NOVA Web Studio — markanıza yakışır, hızlı ve göz alıcı web siteleri. Tasarım, geliştirme ve SEO tek çatı altında." />
+  <title>NOVA Web Studio — Web Sitesi Yapımı</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Animated background blobs -->
+  <div class="bg-blobs" aria-hidden="true">
+    <span class="blob blob-1"></span>
+    <span class="blob blob-2"></span>
+    <span class="blob blob-3"></span>
+  </div>
+
+  <!-- Cursor glow -->
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <!-- Navbar -->
+  <header class="nav" id="nav">
+    <a href="#hero" class="logo">NOVA<span>.</span></a>
+    <nav class="nav-links">
+      <a href="#services">Hizmetler</a>
+      <a href="#features">Neden Biz</a>
+      <a href="#process">Süreç</a>
+      <a href="#pricing">Fiyatlar</a>
+      <a href="#contact" class="btn btn-sm">İletişim</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menü">☰</button>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+      <div class="badge reveal">✨ 2026'da 120+ proje teslim edildi</div>
+      <h1 class="hero-title reveal">
+        Markanızı <span class="grad-text">dijitalde</span><br />parlatan web siteleri
+      </h1>
+      <p class="hero-sub reveal">
+        NOVA Web Studio olarak; hızlı, mobil uyumlu ve dönüşüm odaklı web siteleri
+        tasarlıyor ve kodluyoruz. Tasarım, geliştirme ve SEO — tek çatı altında.
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#contact" class="btn btn-primary">Ücretsiz Teklif Al</a>
+        <a href="#work" class="btn btn-ghost">Çalışmalarımız ↓</a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat"><strong data-count="120">0</strong><span>Teslim Proje</span></div>
+        <div class="stat"><strong data-count="98">0</strong><span>% Memnuniyet</span></div>
+        <div class="stat"><strong data-count="14">0</strong><span>Gün Ort. Teslim</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section" id="services">
+    <div class="section-head reveal">
+      <span class="eyebrow">Hizmetler</span>
+      <h2>İhtiyacınız olan her şey tek yerde</h2>
+    </div>
+    <div class="cards">
+      <article class="card glass reveal">
+        <div class="card-icon">🎨</div>
+        <h3>Web Tasarım</h3>
+        <p>Markanıza özel, modern ve kullanıcı odaklı arayüz tasarımları — Figma'dan canlıya.</p>
+      </article>
+      <article class="card glass reveal">
+        <div class="card-icon">⚡</div>
+        <h3>Web Geliştirme</h3>
+        <p>Hızlı, güvenli ve ölçeklenebilir siteler. Vanilla'dan React'e, ihtiyaca göre.</p>
+      </article>
+      <article class="card glass reveal">
+        <div class="card-icon">🛒</div>
+        <h3>E-Ticaret</h3>
+        <p>Shopify, WooCommerce veya özel altyapı ile satışa hazır mağazalar.</p>
+      </article>
+      <article class="card glass reveal">
+        <div class="card-icon">🚀</div>
+        <h3>SEO & Performans</h3>
+        <p>Google'da üst sıralar ve ışık hızında yükleme için teknik optimizasyon.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="section" id="features">
+    <div class="section-head reveal">
+      <span class="eyebrow">Neden NOVA</span>
+      <h2>Sonuç odaklı bir stüdyo</h2>
+    </div>
+    <div class="features">
+      <div class="feature reveal"><span class="f-num">01</span><h4>Mobil Öncelikli</h4><p>Her ekran boyutunda kusursuz görünüm.</p></div>
+      <div class="feature reveal"><span class="f-num">02</span><h4>Şeffaf Süreç</h4><p>Haftenlik rapor, canlı önizleme, sürpriz yok.</p></div>
+      <div class="feature reveal"><span class="f-num">03</span><h4>Ücretsiz Bakım</h4><p>İlk 3 ay güncelleme ve destek dahil.</p></div>
+      <div class="feature reveal"><span class="f-num">04</span><h4>Analitik Kurulumu</h4><p>Kararları veriyle almanız için takip hazır.</p></div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="section" id="process">
+    <div class="section-head reveal">
+      <span class="eyebrow">Süreç</span>
+      <h2>4 adımda yayında</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="step-dot">1</div><h4>Brief</h4><p>Hedef ve marka ruhunu konuşuyoruz.</p></div>
+      <div class="step reveal"><div class="step-dot">2</div><h4>Tasarım</h4><p>2-3 konsept, beğeninize sunulur.</p></div>
+      <div class="step reveal"><div class="step-dot">3</div><h4>Kodlama</h4><p>Tasarım hayata geçer, test edilir.</p></div>
+      <div class="step reveal"><div class="step-dot">4</div><h4>Yayın</h4><p>Domain, hosting ve SEO ile canlı.</p></div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="section" id="pricing">
+    <div class="section-head reveal">
+      <span class="eyebrow">Fiyatlandırma</span>
+      <h2>Size uygun paket</h2>
+    </div>
+    <div class="pricing">
+      <div class="plan glass reveal">
+        <h3>Başlangıç</h3>
+        <div class="price">₺9.900<span>/tek sefer</span></div>
+        <ul>
+          <li>✓ 5 sayfaya kadar</li>
+          <li>✓ Responsive tasarım</li>
+          <li>✓ İletişim formu</li>
+          <li>✓ 3 ay bakım</li>
+        </ul>
+        <a href="#contact" class="btn btn-ghost">Seç</a>
+      </div>
+      <div class="plan glass plan-pop reveal">
+        <div class="pop-tag">En Popüler</div>
+        <h3>Pro</h3>
+        <div class="price">₺19.900<span>/tek sefer</span></div>
+        <ul>
+          <li>✓ Sınırsız sayfa</li>
+          <li>✓ Özel animasyonlar</li>
+          <li>✓ SEO optimizasyonu</li>
+          <li>✓ 6 ay bakım</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary">Seç</a>
+      </div>
+      <div class="plan glass reveal">
+        <h3>Kurumsal</h3>
+        <div class="price">Özel<span>/teklif</span></div>
+        <ul>
+          <li>✓ E-ticaret / Panel</li>
+          <li>✓ API entegrasyonu</li>
+          <li>✓ A/B test</li>
+          <li>✓ Öncelikli destek</li>
+        </ul>
+        <a href="#contact" class="btn btn-ghost">Konuş</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="contact glass reveal">
+      <div class="contact-info">
+        <span class="eyebrow">İletişim</span>
+        <h2>Haydi başlayalım 🚀</h2>
+        <p>Projenizi anlatın, 24 saat içinde ücretsiz teklif verelim.</p>
+        <div class="contact-meta">
+          <span>✉️ hello@novastudio.dev</span>
+          <span>📞 +90 5xx xxx xx xx</span>
+        </div>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <input type="text" name="name" placeholder="Adınız" required />
+        <input type="email" name="email" placeholder="E-posta" required />
+        <textarea name="message" rows="4" placeholder="Projenizden bahsedin..." required></textarea>
+        <button type="submit" class="btn btn-primary">Gönder</button>
+        <p class="form-note" id="formNote"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span>© 2026 NOVA Web Studio — Tüm hakları saklıdır.</span>
+    <span class="footer-links">
+      <a href="#hero">Yukarı ↑</a>
+    </span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

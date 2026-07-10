@@ -51,7 +51,7 @@ const countObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.5 });
 counters.forEach(c => countObserver.observe(c));
 
-// Contact form (Formspree) — replace YOUR_FORM_ID in index.html action with real ID
+// Contact form (Formspree) — endpoint configured in index.html action
 const form = document.getElementById('contactForm');
 const note = document.getElementById('formNote');
 form.addEventListener('submit', async (e) => {

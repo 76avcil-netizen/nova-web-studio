@@ -51,13 +51,31 @@ const countObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.5 });
 counters.forEach(c => countObserver.observe(c));
 
-// Contact form (front-end demo — no backend)
+// Contact form (Formspree) — replace YOUR_FORM_ID in index.html action with real ID
 const form = document.getElementById('contactForm');
 const note = document.getElementById('formNote');
-form.addEventListener('submit', (e) => {
+form.addEventListener('submit', async (e) => {
   e.preventDefault();
   const name = form.name.value.trim();
   if (!name) return;
-  note.textContent = `Teşekkürler ${name}! Talebiniz alındı, en kısa sürede döneceğiz. ✅`;
-  form.reset();
+  const endpoint = form.getAttribute('action');
+  if (endpoint.includes('YOUR_FORM_ID')) {
+    note.textContent = 'Form henüz yapılandırılmadı (Formspree ID eksik).';
+    return;
+  }
+  try {
+    const res = await fetch(endpoint, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { Accept: 'application/json' },
+    });
+    if (res.ok) {
+      note.textContent = `Teşekkürler ${name}! Talebiniz alındı, en kısa sürede döneceğiz. ✅`;
+      form.reset();
+    } else {
+      note.textContent = 'Gönderimde sorun oldu, lütfen tekrar deneyin.';
+    }
+  } catch {
+    note.textContent = 'Bağlantı hatası, lütfen tekrar deneyin.';
+  }
 });

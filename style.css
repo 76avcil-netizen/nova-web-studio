@@ -78,6 +78,10 @@ h1, h2, h3, h4 { font-family: 'Sora', sans-serif; line-height: 1.15; }
 .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 14px 40px rgba(33, 212, 253, 0.45); }
 .btn-ghost { background: var(--card); border-color: var(--border); color: var(--text); }
 .btn-ghost:hover { transform: translateY(-3px); border-color: var(--accent-2); }
+.btn-whatsapp { background: #25d366; color: #fff; border-color: #25d366; }
+.btn-whatsapp:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(37, 211, 102, 0.45); }
+.wa-inline { color: #25d366; text-decoration: none; font-weight: 600; margin-top: 4px; }
+.wa-inline:hover { text-decoration: underline; }
 
 /* ---------- Hero ---------- */
 .hero {
